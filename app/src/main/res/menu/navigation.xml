@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/navigation_underground"
-        android:icon="@drawable/ic_navigator"
+        android:icon="@drawable/ic_moscow_metro_logo"
         android:title="@string/title_underground" />
 
     <item
@@ -13,17 +13,17 @@
 
     <item
         android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_navigator"
+        android:icon="@drawable/ic_profile"
         android:title="@string/title_profile" />
 
     <item
         android:id="@+id/navigation_news"
-        android:icon="@drawable/ic_navigator"
+        android:icon="@drawable/ic_news"
         android:title="@string/title_news" />
 
     <item
         android:id="@+id/navigation_more"
-        android:icon="@drawable/ic_navigator"
+        android:icon="@drawable/ic_more"
         android:title="@string/title_more" />
 
 </menu>

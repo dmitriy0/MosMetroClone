@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         FragmentManager fragmentManager = getSupportFragmentManager();
                         assert fragment != null;
-                        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.linear, fragment).commit();
                         return true;
                     }
                 });

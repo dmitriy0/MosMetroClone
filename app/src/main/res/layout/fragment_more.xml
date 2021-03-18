@@ -5,38 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FF0000"
+    android:background="#d62829"
     tools:context=".More">
 
-    <TextView
-        android:id="@+id/title"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:gravity="center_vertical"
-        android:textSize="24sp"
-        android:text="@string/title_more" />
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_weight="5"
+            android:text="@string/title_more" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="24sp"
+            android:padding="6dp"
+            android:src="@drawable/ic_settings" />
+
+
+    </LinearLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@drawable/rounded_corner">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/bot"
                 android:layout_width="300dp"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="8dp"
+                android:layout_marginTop="30dp"
                 style="@style/MyCardViewStyle">
                 <LinearLayout
                     android:id="@+id/bot_layout"
                     android:layout_gravity="center"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -44,21 +66,39 @@
                         android:id="@+id/bot_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_more" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Чат-бот" />
                     <TextView
                         android:id="@+id/bot_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="fgdhgfhgfjngfnfgngfnf" />
+                        android:layout_marginTop="8dp"
+
+                        android:text="Для оперативной связи по интересующим вопросам" />
                     <LinearLayout
-                        android:layout_width="100dp"
-                        android:background="#FF0000"
-                        android:layout_height="25dp">
-                        <TextView
-                            android:id="@+id/bot_text_button"
+                        android:layout_width="132dp"
+                        android:background="@drawable/rounded_corner_red"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="32dp">
+
+                        <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Написать" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:src="@drawable/ic_chat" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:paddingEnd="8dp"
+                            android:text="НАПИСАТЬ" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -66,14 +106,14 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/forgot"
                 android:layout_width="300dp"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="8dp"
+                android:layout_marginTop="30dp"
                 style="@style/MyCardViewStyle">
                 <LinearLayout
                     android:id="@+id/forgot_layout"
                     android:layout_gravity="center"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -81,25 +121,54 @@
                         android:id="@+id/forgot_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_more" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Забытые вещи" />
                     <TextView
                         android:id="@+id/forgot_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="fgdhgfhgfjngfnfgngfnf" />
+                        android:layout_marginTop="8dp"
+
+                        android:text="Отправить заявку о забытой или найденной вещи на склад забытых вещей" />
+                    <LinearLayout
+                        android:layout_width="132dp"
+                        android:background="@drawable/rounded_corner_red"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="32dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:src="@drawable/ic_chat" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:paddingEnd="8dp"
+                            android:text="НАПИСАТЬ" />
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/feedback"
                 android:layout_width="300dp"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="8dp"
+                android:layout_marginTop="30dp"
                 style="@style/MyCardViewStyle">
                 <LinearLayout
                     android:id="@+id/feedback_layout"
                     android:layout_gravity="center"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -107,26 +176,54 @@
                         android:id="@+id/feedback_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_more" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Обратная связь" />
                     <TextView
                         android:id="@+id/feedback_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="fgdhgfhgfjngfnfgngfnf" />
+                        android:layout_marginTop="8dp"
+
+                        android:text="Напишите нам если у вас возникли вопросы или вы хотите оставить заявку" />
+                    <LinearLayout
+                        android:layout_width="132dp"
+                        android:background="@drawable/rounded_corner_red"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="32dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:paddingStart="16dp"
+                            android:src="@drawable/ic_mail" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:paddingEnd="8dp"
+                            android:text="НАПИСАТЬ" />
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/support"
                 android:layout_width="300dp"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="8dp"
+                android:layout_marginTop="30dp"
                 style="@style/MyCardViewStyle">
                 <LinearLayout
                     android:id="@+id/support_layout"
                     android:layout_gravity="center"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -134,53 +231,109 @@
                         android:id="@+id/support_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_more" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Заявка на сопровождение" />
                     <TextView
                         android:id="@+id/support_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="fgdhgfhgfjngfnfgngfnf" />
+                        android:layout_marginTop="8dp"
+
+                        android:text="Отправить заявку в центр обеспечения мобильности пассажиров" />
+                    <LinearLayout
+                        android:layout_width="132dp"
+                        android:background="@drawable/rounded_corner_red"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="32dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:paddingStart="16dp"
+                            android:src="@drawable/ic_mail" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:paddingEnd="8dp"
+                            android:text="ОСТАВИТЬ ЗАЯВКУ" />
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/help_information"
+                android:id="@+id/help_info"
                 android:layout_width="300dp"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="8dp"
+                android:layout_marginTop="30dp"
                 style="@style/MyCardViewStyle">
                 <LinearLayout
-                    android:id="@+id/help_information_layout"
+                    android:id="@+id/help_info_layout"
                     android:layout_gravity="center"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/help_information_title"
+                        android:id="@+id/help_info_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_more" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Справочная информация" />
                     <TextView
-                        android:id="@+id/help_information_description"
+                        android:id="@+id/help_info_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="fgdhgfhgfjngfnfgngfnf" />
+                        android:layout_marginTop="8dp"
+
+                        android:text="Доступна на нашем официальном сайте" />
+                    <LinearLayout
+                        android:layout_width="132dp"
+                        android:background="@drawable/rounded_corner_red"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="32dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:paddingStart="16dp"
+                            android:src="@drawable/ic_link" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:paddingEnd="8dp"
+                            android:text="ПЕРЕЙТИ" />
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/rate"
                 android:layout_width="300dp"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="8dp"
+                android:layout_marginTop="30dp"
                 style="@style/MyCardViewStyle">
                 <LinearLayout
                     android:id="@+id/rate_layout"
                     android:layout_gravity="center"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -188,26 +341,55 @@
                         android:id="@+id/rate_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_more" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Оцените нас" />
                     <TextView
                         android:id="@+id/rate_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="fgdhgfhgfjngfnfgngfnf" />
+                        android:layout_marginTop="8dp"
+
+                        android:text="Благодаря вашим оценкам мы развиваемся" />
+                    <LinearLayout
+                        android:layout_width="132dp"
+                        android:background="@drawable/rounded_corner_red"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="32dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:src="@drawable/ic_rate" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:paddingEnd="8dp"
+                            android:text="ОЦЕНИТЬ" />
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/about"
                 android:layout_width="300dp"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="56dp"
                 style="@style/MyCardViewStyle">
                 <LinearLayout
                     android:id="@+id/about_layout"
                     android:layout_gravity="center"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -215,12 +397,40 @@
                         android:id="@+id/about_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_more" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="О приложении" />
                     <TextView
                         android:id="@+id/about_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="fgdhgfhgfjngfnfgngfnf" />
+                        android:layout_marginTop="8dp"
+
+                        android:text="да" />
+                    <LinearLayout
+                        android:layout_width="132dp"
+                        android:background="@drawable/rounded_corner_red"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="32dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:paddingStart="16dp"
+                            android:src="@drawable/ic_link" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:paddingEnd="8dp"
+                            android:text="ОФЕРТА" />
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
