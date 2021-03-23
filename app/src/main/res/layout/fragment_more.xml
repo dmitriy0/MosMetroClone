@@ -77,27 +77,28 @@
 
                         android:text="Для оперативной связи по интересующим вопросам" />
                     <LinearLayout
-                        android:layout_width="132dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
                         android:background="@drawable/rounded_corner_red"
                         android:layout_marginTop="8dp"
-                        android:layout_height="32dp">
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:gravity="center"
-                            android:padding="4dp"
-                            android:paddingStart="16dp"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="8dp"
                             android:src="@drawable/ic_chat" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:textColor="#fff"
                             android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
                             android:text="НАПИСАТЬ" />
                     </LinearLayout>
                 </LinearLayout>
@@ -132,27 +133,29 @@
 
                         android:text="Отправить заявку о забытой или найденной вещи на склад забытых вещей" />
                     <LinearLayout
-                        android:layout_width="132dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
                         android:background="@drawable/rounded_corner_red"
                         android:layout_marginTop="8dp"
-                        android:layout_height="32dp">
+
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:gravity="center"
-                            android:padding="4dp"
-                            android:paddingStart="16dp"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="8dp"
                             android:src="@drawable/ic_chat" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:textColor="#fff"
                             android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
                             android:text="НАПИСАТЬ" />
                     </LinearLayout>
                 </LinearLayout>
@@ -187,27 +190,29 @@
 
                         android:text="Напишите нам если у вас возникли вопросы или вы хотите оставить заявку" />
                     <LinearLayout
-                        android:layout_width="132dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
                         android:background="@drawable/rounded_corner_red"
                         android:layout_marginTop="8dp"
-                        android:layout_height="32dp">
+
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:paddingStart="16dp"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="6dp"
                             android:src="@drawable/ic_mail" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:textColor="#fff"
                             android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
                             android:text="НАПИСАТЬ" />
                     </LinearLayout>
                 </LinearLayout>
@@ -242,27 +247,28 @@
 
                         android:text="Отправить заявку в центр обеспечения мобильности пассажиров" />
                     <LinearLayout
-                        android:layout_width="132dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
                         android:background="@drawable/rounded_corner_red"
                         android:layout_marginTop="8dp"
-                        android:layout_height="32dp">
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:paddingStart="16dp"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="6dp"
                             android:src="@drawable/ic_mail" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:textColor="#fff"
                             android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
                             android:text="ОСТАВИТЬ ЗАЯВКУ" />
                     </LinearLayout>
                 </LinearLayout>
@@ -297,27 +303,29 @@
 
                         android:text="Доступна на нашем официальном сайте" />
                     <LinearLayout
-                        android:layout_width="132dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
                         android:background="@drawable/rounded_corner_red"
                         android:layout_marginTop="8dp"
-                        android:layout_height="32dp">
+
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:paddingStart="16dp"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="8dp"
                             android:src="@drawable/ic_link" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:textColor="#fff"
                             android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
                             android:text="ПЕРЕЙТИ" />
                     </LinearLayout>
                 </LinearLayout>
@@ -352,27 +360,28 @@
 
                         android:text="Благодаря вашим оценкам мы развиваемся" />
                     <LinearLayout
-                        android:layout_width="132dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
                         android:background="@drawable/rounded_corner_red"
                         android:layout_marginTop="8dp"
-                        android:layout_height="32dp">
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:gravity="center"
-                            android:padding="4dp"
-                            android:paddingStart="16dp"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="8dp"
                             android:src="@drawable/ic_rate" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:textColor="#fff"
                             android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
                             android:text="ОЦЕНИТЬ" />
                     </LinearLayout>
                 </LinearLayout>
@@ -384,7 +393,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="56dp"
+                android:layout_marginBottom="72dp"
                 style="@style/MyCardViewStyle">
                 <LinearLayout
                     android:id="@+id/about_layout"
@@ -408,27 +417,28 @@
 
                         android:text="да" />
                     <LinearLayout
-                        android:layout_width="132dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
                         android:background="@drawable/rounded_corner_red"
                         android:layout_marginTop="8dp"
-                        android:layout_height="32dp">
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:paddingStart="16dp"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="8dp"
                             android:src="@drawable/ic_link" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:textColor="#fff"
                             android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
                             android:text="ОФЕРТА" />
                     </LinearLayout>
                 </LinearLayout>
